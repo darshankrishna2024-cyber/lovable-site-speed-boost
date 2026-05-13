@@ -215,7 +215,7 @@ function Contact() {
               const form = e.currentTarget;
               const formData = new FormData(form);
               try {
-                const res = await fetch("https://formsubmit.co/ajax/connect@tdsgconsultancy.com", {
+                const res = await fetch("https://formspree.io/f/xzdowyoe", {
                   method: "POST",
                   headers: { Accept: "application/json" },
                   body: formData,
