@@ -50,8 +50,8 @@ export const Route = createFileRoute("/contact")({
           name: "TDS Global Consultancy",
           image: "https://tdsglobal.com/og.jpg",
           telephone: "+91-97899-16414",
-          email: "connect@tdsglobal.com",
-          url: "https://tdsglobal.com",
+          email: "connect@tdsgconsultancy.com",
+          url: "https://www.tdsgconsultancy.com",
           priceRange: "$$$",
           address: {
             "@type": "PostalAddress",
@@ -144,8 +144,13 @@ function Contact() {
 
             <ul className="space-y-5">
               {[
-                { icon: Mail, k: "Email", v: <a href="mailto:connect@tdsglobal.com" className="hover:text-gold">connect@tdsglobal.com</a> },
-                { icon: Globe, k: "Website", v: "www.tdsglobal.com" },
+                { icon: Mail, k: "Email", v: (
+                  <span className="flex flex-col">
+                    <a href="mailto:connect@tdsgconsultancy.com" className="hover:text-gold">connect@tdsgconsultancy.com</a>
+                    <a href="mailto:arul@tdsgconsultancy.com" className="hover:text-gold">arul@tdsgconsultancy.com</a>
+                  </span>
+                ) },
+                { icon: Globe, k: "Website", v: <a href="https://www.tdsgconsultancy.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold">www.tdsgconsultancy.com</a> },
                 { icon: Phone, k: "Phone", v: <a href="tel:+919789916414" className="hover:text-gold">+91 97899 16414</a> },
                 {
                   icon: MapPin,
@@ -210,7 +215,7 @@ function Contact() {
               const form = e.currentTarget;
               const formData = new FormData(form);
               try {
-                const res = await fetch("https://formsubmit.co/ajax/connect@tdsglobal.com", {
+                const res = await fetch("https://formsubmit.co/ajax/connect@tdsgconsultancy.com", {
                   method: "POST",
                   headers: { Accept: "application/json" },
                   body: formData,
@@ -219,7 +224,7 @@ function Contact() {
                 setSent(true);
                 form.reset();
               } catch {
-                setError("Something went wrong. Please email connect@tdsglobal.com directly.");
+                setError("Something went wrong. Please email connect@tdsgconsultancy.com directly.");
               } finally {
                 setSubmitting(false);
               }

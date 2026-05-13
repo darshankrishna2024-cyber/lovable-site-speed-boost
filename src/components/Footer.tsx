@@ -33,8 +33,9 @@ export function Footer() {
         <div>
           <h4 className="font-display text-base mb-4 text-gold">Get in touch</h4>
           <ul className="space-y-3 text-sm text-primary-foreground/80">
-            <li className="flex items-start gap-2"><Mail size={16} className="mt-0.5 text-gold" /> connect@tdsglobal.com</li>
-            <li className="flex items-start gap-2"><Globe size={16} className="mt-0.5 text-gold" /> www.tdsglobal.com</li>
+            <li className="flex items-start gap-2"><Mail size={16} className="mt-0.5 text-gold flex-shrink-0" /><a href="mailto:connect@tdsgconsultancy.com" className="hover:text-gold">connect@tdsgconsultancy.com</a></li>
+            <li className="flex items-start gap-2"><Mail size={16} className="mt-0.5 text-gold flex-shrink-0" /><a href="mailto:arul@tdsgconsultancy.com" className="hover:text-gold">arul@tdsgconsultancy.com</a></li>
+            <li className="flex items-start gap-2"><Globe size={16} className="mt-0.5 text-gold flex-shrink-0" /><a href="https://www.tdsgconsultancy.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold">www.tdsgconsultancy.com</a></li>
             <li className="flex items-start gap-2"><Phone size={16} className="mt-0.5 text-gold" /> <a href="tel:+919789916414" className="hover:text-gold">+91 97899 16414</a></li>
             <li className="flex items-start gap-2">
               <MapPin size={16} className="mt-0.5 text-gold flex-shrink-0" />

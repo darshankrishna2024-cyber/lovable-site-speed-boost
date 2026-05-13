@@ -2,11 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, PageHero } from "@/components/PageShell";
 import { ArrowRight } from "lucide-react";
 import p1 from "@/assets/photos/p1.webp";
+import p2 from "@/assets/photos/p2.webp";
 import p4 from "@/assets/photos/p4.webp";
+import p5 from "@/assets/photos/p5.webp";
 import p6 from "@/assets/photos/p6.webp";
-import p7 from "@/assets/photos/p7.webp";
 import p8 from "@/assets/photos/p8.webp";
-import p3 from "@/assets/photos/p3.webp";
 
 export const Route = createFileRoute("/programs")({
   head: () => ({
@@ -63,7 +63,7 @@ const programs = [
     audience: "Mid to Senior Managers",
     method: "Classroom + Experiential",
     body: "The flagship TDS Global offering. A high-intensity leadership development journey that challenges managers to confront their blind spots, sharpen their decision-making, and emerge as leaders who inspire rather than instruct.",
-    img: p1,
+    img: p5,
   },
   {
     n: "02",
@@ -71,7 +71,7 @@ const programs = [
     audience: "Teams + Managers",
     method: "Outbound + Structured Reflection",
     body: "Leadership happens under pressure. This program takes participants out of the boardroom and into real terrain — using outdoor challenges, team dynamics, and deep reflection to permanently shift how people lead, collaborate, and perform.",
-    img: p7,
+    img: p2,
   },
   {
     n: "03",
@@ -95,7 +95,7 @@ const programs = [
     audience: "Cross-Functional Teams",
     method: "Experiential + Outbound",
     body: "High-performing teams are built on trust, clarity, and shared accountability. This program breaks down silos, resolves conflict, aligns purpose, and creates teams that perform at their collective best — consistently.",
-    img: p8,
+    img: p1,
   },
   {
     n: "06",
@@ -103,7 +103,7 @@ const programs = [
     audience: "Senior Leaders",
     method: "Classroom + 1:1 Coaching",
     body: "Presence is not personality. It is a skill. This masterclass develops the communication authority, strategic gravitas, and influential leadership behaviours that define executives who command respect in any room.",
-    img: p3,
+    img: p8,
   },
 ];
 

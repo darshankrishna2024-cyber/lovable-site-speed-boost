@@ -50,16 +50,43 @@ function HeroAccent({ variant }: { variant: Variant }) {
   const common = "hidden lg:block absolute top-1/2 right-[5%] -translate-y-1/2 pointer-events-none";
 
   if (variant === "about") {
-    // Concentric portrait halos — "people first"
+    // Profile constellation — "people first"
     return (
       <div className={common}>
-        <div className="relative h-[420px] w-[420px]">
+        <div className="relative h-[380px] w-[380px]">
+          {/* orbits */}
           <div className="absolute inset-0 rounded-full border border-gold/30 founder-orbit-slow" />
-          <div className="absolute inset-8 rounded-full border border-gold/20 founder-orbit-reverse" />
-          <div className="absolute inset-20 rounded-full border border-gold/15 founder-orbit-slow" />
-          <div className="absolute inset-0 m-auto h-32 w-32 rounded-full bg-gold/15 blur-2xl founder-float" />
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-gold shadow-gold founder-orbit-slow" />
-          <div className="absolute bottom-1/4 right-0 translate-x-1/2 h-2 w-2 rounded-full bg-gold-soft founder-orbit-reverse" />
+          <div className="absolute inset-10 rounded-full border border-gold/20 founder-orbit-reverse" />
+          {/* glow center */}
+          <div className="absolute inset-0 m-auto h-32 w-32 rounded-full bg-gold/20 blur-2xl founder-float" />
+          {/* central monogram */}
+          <div className="absolute inset-0 m-auto h-24 w-24 rounded-full bg-gold-gradient shadow-gold flex items-center justify-center text-navy-deep font-display text-3xl">
+            TDS
+          </div>
+          {/* orbiting profile chips */}
+          {[
+            { x: "50%", y: "2%", label: "Lead", initials: "AP" },
+            { x: "94%", y: "30%", label: "Coach", initials: "RK" },
+            { x: "78%", y: "92%", label: "Design", initials: "MN" },
+            { x: "12%", y: "82%", label: "Mentor", initials: "SV" },
+            { x: "2%", y: "30%", label: "Facilitate", initials: "JL" },
+          ].map((p, i) => (
+            <div
+              key={p.label}
+              className="absolute -translate-x-1/2 -translate-y-1/2 founder-float"
+              style={{ left: p.x, top: p.y, animationDelay: `${i * 0.4}s` }}
+            >
+              <div className="flex flex-col items-center gap-1">
+                <div className="h-10 w-10 rounded-full bg-navy border border-gold/60 text-gold text-xs font-semibold flex items-center justify-center shadow-gold">
+                  {p.initials}
+                </div>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-gold/80">{p.label}</span>
+              </div>
+            </div>
+          ))}
+          {/* spark dots */}
+          <div className="absolute top-1/4 right-2 h-2 w-2 rounded-full bg-gold founder-orbit-slow" />
+          <div className="absolute bottom-1/4 left-2 h-2 w-2 rounded-full bg-gold-soft founder-orbit-reverse" />
         </div>
       </div>
     );
