@@ -209,7 +209,7 @@ function About() {
       {/* Why we exist */}
       <section className="py-24 bg-secondary">
         <div className="container-narrow grid lg:grid-cols-2 gap-16 items-center">
-          <img src={p5} alt="Outbound experiential training" loading="lazy" decoding="async" className="rounded-2xl shadow-elegant w-full aspect-[4/3] object-cover order-last lg:order-first" />
+          <img src={about2} alt="TDS Global founder presenting Mypreneur recognition on stage" loading="lazy" decoding="async" className="rounded-2xl shadow-elegant w-full aspect-[4/3] object-cover order-last lg:order-first" />
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Our Founding Philosophy</p>
             <h2 className="text-4xl md:text-5xl font-display leading-tight">Why TDS Global Exists</h2>
