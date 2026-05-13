@@ -6,13 +6,13 @@ import { ArrowRight, Rocket, BrainCircuit, TrendingUp } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "TDS Global — Beyond Training. Into Transformation." },
+      { title: "TDS Global Consultancy — Beyond Training. Into Transformation." },
       {
         name: "description",
         content:
-          "Customised corporate leadership, mindset and team transformation programs from Chennai — measurable behavioural change across India and globally.",
+          "TDS Global Consultancy delivers customised corporate leadership, mindset and team transformation programs from Chennai — measurable behavioural change across India and globally.",
       },
-      { property: "og:title", content: "TDS Global — Beyond Training. Into Transformation." },
+      { property: "og:title", content: "TDS Global Consultancy — Beyond Training. Into Transformation." },
       {
         property: "og:description",
         content:
