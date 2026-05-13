@@ -232,11 +232,9 @@ function Contact() {
             className="lg:col-span-3 p-8 md:p-10 rounded-2xl border border-border bg-card shadow-elegant space-y-5"
           >
             <h3 className="text-2xl font-display text-navy">Tell us your challenge</h3>
-            {/* FormSubmit config */}
+            {/* Formspree config */}
             <input type="hidden" name="_subject" value="New TDS Global enquiry" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="true" />
-            <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+            <input type="text" name="_gotcha" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
             <div className="grid sm:grid-cols-2 gap-5">
               <Field label="Full Name" name="name" required />
