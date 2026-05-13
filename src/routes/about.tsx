@@ -197,7 +197,7 @@ function About() {
             </div>
           </div>
           <div className="relative">
-            <img src={p2} alt="TDS Global team facilitating a corporate workshop" loading="lazy" decoding="async" className="rounded-2xl shadow-elegant w-full aspect-[4/5] object-cover" />
+            <img src={about1} alt="TDS Global founder presenting a bouquet at a corporate transformation event" loading="lazy" decoding="async" className="rounded-2xl shadow-elegant w-full aspect-[4/5] object-cover" />
             <div className="absolute -bottom-6 -right-6 bg-gold-gradient text-navy-deep p-6 rounded-2xl shadow-gold max-w-xs">
               <p className="text-3xl font-display">India · Asia · Beyond</p>
               <p className="text-sm mt-1 opacity-80">Global delivery capability</p>
