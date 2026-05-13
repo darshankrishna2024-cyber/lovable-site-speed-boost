@@ -174,8 +174,8 @@ function Why() {
               ))}
             </ul>
 
-            <Link to="/contact" className="mt-10 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-navy text-primary-foreground font-medium hover:bg-navy-deep transition-colors shadow-elegant">
-              Become a partner <ArrowRight size={16} />
+            <Link to="/contact" className="group mt-10 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-navy text-primary-foreground font-medium border border-gold/40 shadow-elegant transition-all duration-300 hover:bg-gold-gradient hover:text-navy-deep hover:-translate-y-0.5 hover:shadow-gold focus:outline-none focus:ring-2 focus:ring-gold/60">
+              Become a partner <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1.5" />
             </Link>
           </div>
         </div>
