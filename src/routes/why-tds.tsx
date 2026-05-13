@@ -71,30 +71,31 @@ function Why() {
             <h2 className="text-4xl md:text-5xl font-display">Five forces that move <span className="italic text-gradient-gold">the needle.</span></h2>
           </div>
 
-          {/* Desktop: orbital constellation */}
-          <div className="hidden md:block relative mx-auto max-w-4xl aspect-[4/3]">
-            <div className="absolute inset-0 m-auto h-48 w-48 lg:h-56 lg:w-56 rounded-full bg-gold-gradient shadow-gold flex items-center justify-center text-navy-deep text-center p-6 found-card cursor-pointer">
+          {/* Desktop: orbital constellation — compact */}
+          <div className="hidden md:block relative mx-auto max-w-2xl aspect-[5/4]">
+            <div className="absolute inset-0 m-auto h-32 w-32 lg:h-36 lg:w-36 rounded-full bg-gold-gradient shadow-gold flex items-center justify-center text-navy-deep text-center p-4 found-card cursor-pointer group transition-transform hover:scale-105">
               <div>
-                <p className="font-display text-2xl lg:text-3xl leading-tight">TDS Global</p>
-                <p className="text-[10px] uppercase tracking-[0.3em] mt-1 opacity-80">Edge</p>
+                <p className="font-display text-xl lg:text-2xl leading-tight">TDS Global</p>
+                <p className="text-[9px] uppercase tracking-[0.3em] mt-1 opacity-80">Edge</p>
               </div>
             </div>
-            <div className="pointer-events-none absolute inset-0 m-auto rounded-full border border-dashed border-gold/30 founder-orbit-slow" style={{ width: "78%", height: "78%" }} />
+            <div className="pointer-events-none absolute inset-0 m-auto rounded-full border border-dashed border-gold/30 founder-orbit-slow" style={{ width: "70%", height: "70%" }} />
             {[
-              { icon: Target, label: "Customised", x: "50%", y: "4%" },
-              { icon: Gauge, label: "Outcome-driven", x: "94%", y: "32%" },
-              { icon: Layers, label: "Three Methods", x: "78%", y: "92%" },
-              { icon: Handshake, label: "Partnership", x: "22%", y: "92%" },
-              { icon: Globe2, label: "Global Standards", x: "6%", y: "32%" },
+              { icon: Target, label: "Customised", x: "50%", y: "6%" },
+              { icon: Gauge, label: "Outcome-driven", x: "92%", y: "32%" },
+              { icon: Layers, label: "Three Methods", x: "78%", y: "90%" },
+              { icon: Handshake, label: "Partnership", x: "22%", y: "90%" },
+              { icon: Globe2, label: "Global Standards", x: "8%", y: "32%" },
             ].map(({ icon: Icon, label, x, y }, i) => (
-              <div
+              <button
+                type="button"
                 key={label}
-                className="absolute found-card cursor-pointer rounded-2xl bg-navy text-primary-foreground border border-gold/30 px-4 py-3 w-40 text-center road-node -translate-x-1/2 -translate-y-1/2"
+                className="group absolute found-card cursor-pointer rounded-xl bg-navy text-primary-foreground border border-gold/30 px-3 py-2.5 w-32 text-center road-node -translate-x-1/2 -translate-y-1/2 transition-all duration-300 hover:-translate-y-[calc(50%+4px)] hover:border-gold hover:shadow-gold hover:bg-navy-deep focus:outline-none focus:ring-2 focus:ring-gold/60"
                 style={{ left: x, top: y, animationDelay: `${i * 0.12}s` }}
               >
-                <Icon className="found-icon text-gold mx-auto mb-2" size={22} />
-                <p className="text-sm font-semibold">{label}</p>
-              </div>
+                <Icon className="found-icon text-gold mx-auto mb-1.5 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6" size={18} />
+                <p className="text-xs font-semibold tracking-wide">{label}</p>
+              </button>
             ))}
           </div>
 
