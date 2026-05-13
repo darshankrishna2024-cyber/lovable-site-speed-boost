@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, PageHero } from "@/components/PageShell";
 import { Check, ArrowRight, Target, Layers, Handshake, Globe2, Gauge } from "lucide-react";
-import p2 from "@/assets/photos/p2.webp";
+import whyTds from "@/assets/why-tds-1.webp";
 
 export const Route = createFileRoute("/why-tds")({
   head: () => ({
