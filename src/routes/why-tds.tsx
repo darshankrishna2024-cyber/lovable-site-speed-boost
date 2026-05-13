@@ -142,7 +142,7 @@ function Why() {
 
       <section className="py-24 bg-secondary">
         <div className="container-narrow grid lg:grid-cols-2 gap-16 items-center">
-          <img src={p2} alt="TDS Global client engagement" loading="lazy" decoding="async" className="rounded-2xl shadow-elegant w-full aspect-[4/5] object-cover" />
+          <img src={whyTds} alt="TDS Global audience engaged at a corporate transformation summit" loading="lazy" decoding="async" className="rounded-2xl shadow-elegant w-full aspect-[4/5] object-cover" />
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Who We Work With</p>
             <h2 className="text-4xl md:text-5xl font-display leading-tight">
