@@ -9,6 +9,8 @@ import p6 from "@/assets/photos/p6.webp";
 import p7 from "@/assets/photos/p7.webp";
 import p8 from "@/assets/photos/p8.webp";
 import founder from "@/assets/founder.webp";
+import about1 from "@/assets/about-1.webp";
+import about2 from "@/assets/about-2.webp";
 import { Eye, Target, Heart, Award, GraduationCap, Users, Linkedin, Quote } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
